@@ -1,0 +1,385 @@
+/* Section 1: Hero Section */
+.about-hero-section {
+  position: relative;
+  height: 85vh;
+  background-image: url('pictures/real-estate1.jpg'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.about-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.about-hero-section h1 {
+  position: relative;
+  z-index: 1;
+  font-family: "Mulish", Sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-align: left !important;
+  letter-spacing: 2px;
+  padding: 0 0 20px 20px;
+
+}
+
+/* Sticky Download Brochure Button */
+.download-brochure-btn {
+  position: fixed;
+  top: 93%; /* Adjust as needed */
+  transform: translateY(-50%);
+  right: 20px; /* Adjust as needed */
+  background-color: #FFFFFF;
+  border-style: solid;
+  color:#FE0000; /* Crimson red text */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: normal;
+  border-color: #FE0000;
+  border-radius: 5px;
+  border-width: 1px 1px 1px 1px;
+  z-index: 1001; /* Ensure it's above other content */
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  display: block; /* Initially hidden */
+  font-family: "Mulish", Sans-serif;
+  fill: #FE0000;
+  color:#FE0000;    
+}
+
+/* .download-brochure-btn:hover {
+  color: #000; Text becomes black
+  border: 1px solid #df1f26; Border zooms out
+  /* transform: translateY(-50%) scale(1.1); Zoom out effect
+  /* font-size: 25px;
+} */
+
+
+
+/* Section 2: Company Overview */
+.company-overview-section {
+  padding: 60px 0 0;
+  background-color: #FFFFFF; /* Changed to white */
+}
+
+.company-overview-left {
+  background-color: transparent; /* Removed background color */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.company-overview-right {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.company-overview-right p {
+  font-size: 20px;
+  font-family: "Mulish", Sans-serif;
+  color: #ee3123;
+  margin: auto !important;
+}
+
+.company-overview-left p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #54595f;
+}
+
+/* Section 3: Leadership */
+.leadership-section {
+  /* padding: 25px 0; */
+  background-color: #fff;
+}
+
+.leadership-section h2 {
+  font-family: "Mulish", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.leadership-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.leadership-right {
+  padding: 30px;
+}
+
+.leadership-right h2 {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.leadership-right p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #54595f;
+  text-align: justify;
+}
+
+/* Section 4 & 5: Board Members & Management Team */
+.board-members-section,
+.management-team-section {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* Changed to white */
+  text-align: center;
+}
+
+.board-members {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* Changed to white */
+  text-align: center;
+}
+
+.board-members .row {
+  margin-top: 60px;
+}
+
+.board-members-section h2,
+.management-team-section h2 {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.team-member .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark shadow */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.team-member .overlay h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.8em;
+  letter-spacing: 0.2px;
+}
+
+.team-member .overlay p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Section 6: Newsletter Sign-Up */
+/* .newsletter-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+} */
+/* .newsletter-section h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  color: #646569;
+} */
+/* hr {
+  border: 1px rgba(0, 0, 0, 0.25) solid;
+  height: 1px;
+  margin: 20px auto;
+} */
+
+
+
+/* .newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  flex: 0.4;
+  
+  padding: .8rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #001F3F;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+} */
+/* .email-subscribe input[type="text"]:focus,
+.email-subscribe input[type="email"]:focus {
+  outline: none;
+  border-color: #df1f26;
+}
+.email-subscribe input::placeholder {
+    color: #6c757d;
+    opacity: 1;
+} */
+
+
+/* @media (max-width: 480px) {
+    .email-subscribe {
+        display: block;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-subscribe input[type="text"],
+    .email-subscribe input[type="email"] {
+        width: 100%;
+        margin: 0.75rem 0rem;
+    }
+     
+} */
+/* .email-subscribe input[type="submit"] {
+    padding: .8rem 2rem;
+    background-color: #DE1F26;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: translateY 1s ease-in-out,
+        background-color .2s ease-in-out,
+        box-shadow .2s ease-in-out;
+} */
+/* .email-subscribe input[type="submit"]:hover {
+    background-color: #001F3F;
+    box-shadow: 2px 2px 4px #555;
+}
+
+
+
+/* .newsletter-form .subscribe-button {
+  background-color: #df1f26; 
+  color: #fff; 
+  border: 1px solid #df1f26;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Mulish", Sans-serif;
+} */
+
+
+
+
+
+.company-overview-section, .leadership-section, .board-members-section, .management-team-section, .newsletter-section {
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .company-overview-left,
+  .company-overview-right,
+  .leadership-left,
+  .leadership-right {
+    padding: 20px;
+  }
+
+  .leadership-right h2 {
+    font-size: 2rem;
+  }
+
+  .board-members-section h2,
+  .management-team-section h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .company-overview-section .row,
+  .leadership-section .row {
+    flex-direction: column;
+  }
+
+  .company-overview-left,
+  .company-overview-right {
+    margin-bottom: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
