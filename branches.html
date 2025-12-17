@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Branches - Iconic Innovations Nigeria Limited</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/branches.css">
+    <link rel="shortcut icon" href="pictures/logo-crimson-red.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- 🌀 Preloader Section -->
+    <div id="preloader">
+      <img src="pictures/logo-crimson-red.png" alt="Loading..." id="loader-logo">
+    </div>
+    <nav>
+      
+        <div class="logo-container">
+          <a class="logo-container" href="index.html">
+          <img
+            src="pictures/logo-crimson-red.png"
+            alt="Iconic Innovations Logo"
+            class="logo-main"
+          />
+          Iconic Innovations
+          </a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle" style="margin-bottom:15x;">
+          <span class="hamburger-icon">&#9776;</span>
+          <span class="close-icon">&times;</span>
+        </div>
+        
+        <ul class="nav-links" id="nav-links">
+          <li class="dropdown">
+            <a href="about.html">ABOUT US</a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">Overview </a></li>
+              <li><a href="about.html">Our Leadership</a></li>
+              <li><a href="branches.html">Our Branches </a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="branches.html">OUR BRANCHES</a>
+            <ul class="dropdown-menu">
+              <li><a href="branches.html">Overview</a></li>
+              <li><a href="branches.html#technologies">Iconic Technologies</a></li>
+              <li><a href="branches.html#designs">Iconic Graphics</a></li>
+              <li><a href="branches.html#properties">Iconic Properties</a></li>
+              <li><a href="branches.html#interiors">Iconic Interiors & Painting</a></li>
+            </ul>
+          </li>
+          <li > <!-- class="dropdown" -->
+            <a href="goals.html">OUR GOALS & SDG </a>
+          </li>
+          <li > <!-- class="dropdown" -->
+            <a href="contact.html"> CONTACT US </a>
+            <ul class="dropdown-menu"></ul>
+          </li>
+
+          <!-- <li class="search-icon">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </a>
+          </li> -->
+
+        </ul>
+      </div>
+    </nav>
+
+
+    <section class="hero">
+      <div class="slider-container">
+        <div
+          class="slide active-slide"
+          style="background-image: url('pictures/real-estate1.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pictures/steptodown.com116929.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pictures/steptodown.com293618.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pictures/steptodown.com548621.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pictures/steptodown.com799808.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('pictures/steptodown.com918318.jpg')"
+        ></div>
+      </div>
+
+
+      <div class="heroContent">
+        <h1>
+          Our Branches
+        </h1>
+      </div>
+    </section>
+
+    <div class="branch-tabs">
+      <div class="branch-tab active" onclick="scrollToBranch('technologies')">
+        Iconic Technologies
+      </div>
+      <div class="branch-tab" onclick="scrollToBranch('designs')">
+        Iconic Designs & Illustration
+      </div>
+      <div class="branch-tab" onclick="scrollToBranch('interiors')">
+        Iconic Interiors & Painting
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="branches-container">
+      <section class="branch-highlight fade-in" id="overview">
+        <h2>Branches Highlight</h2>
+        <p>
+          We operate across various sectors, from technology and real estate to
+          design and fashion delivering premium, sustainable, and
+          forward-thinking products and services that inspire and empower
+          individuals, businesses, and communities.
+        </p>
+      </section>
+
+      <section class="branch-section fade-in" id="technologies">
+        <div class="branch-content">
+          <div class="branch-image">
+            <img
+              src="pictures/steptodown.com918318.jpg"
+              alt="Iconic Technologies"
+            />
+          </div>
+          <div class="branch-text">
+            <h2>Iconic Technologies</h2>
+            <p>
+              Iconic Technologies powers business and lifestyle transformation
+              through custom software development, mobile and web applications,
+              technical support, and tech consulting, delivering intuitive and
+              scalable digital solutions and products.
+            </p>
+            <p>
+              We offer cutting-edge software, applications, and IT support that
+              help individuals and businesses thrive in the digital age.
+            </p>
+
+            <h3>Our Expertise:</h3>
+            <ul class="expertise-list">
+              <li>
+                <strong>Software Development:</strong>
+                Bespoke desktop and enterprise software solutions designed to
+                meet industry-specific needs and optimize operations.
+              </li>
+              <li>
+                <strong>Web & Mobile Application Development:</strong>
+                Building scalable, responsive, and secure apps for iOS, Android,
+                and web environments.
+              </li>
+              <li>
+                <strong>Digital Strategy & Tech Consulting:</strong>
+                Offering expert guidance in digital transformation, IT
+                infrastructure planning, and product ideation to support
+                business goals.
+              </li>
+              <li>
+                <strong>Technical Support & Maintenance:</strong>
+                Ongoing technical support, updates, and performance optimization
+                for sustained efficiency.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="branch-section fade-in" id="designs">
+          <div class="branch-content">
+            <div class="branch-image">
+              <img
+                src="pictures/graphics.png"
+                alt="Iconic Designs and Illustration"
+              />
+            </div>
+            <div class="branch-text">
+              <h2>Iconic Designs and Illustration</h2>
+              <p>
+                Iconic Designs and Illustration is the visual storytelling hub of
+                Iconic Innovations Nigeria Limited, empowering brands and
+                individuals through impactful design and crafting creative design,
+                branding, and motion art. We craft visual identities and
+                storytelling experiences that captivate and connect.
+              </p>
+
+              <h3>Our Expertise:</h3>
+              <ul class="expertise-list">
+                <li>
+                  <strong>Brand Identity Design:</strong>
+                  Strategic brand development including logo design, visual
+                  systems, and corporate branding kits.
+                </li>
+                <li>
+                  <strong>Custom Graphics:</strong>
+                  Posters, flyers, banners, social media visuals, and marketing
+                  collateral crafted with originality and precision.
+                </li>
+                <li>
+                  <strong>UI/UX Design:</strong>
+                  Designing intuitive user interfaces and immersive experiences
+                  for mobile and web platforms, ensuring both function and beauty.
+                </li>
+                <li>
+                  <strong>Motion Graphics & Animation:</strong>
+                  Dynamic visual content such as animated intros, explainer
+                  videos, and promotional reels for digital engagement.
+                </li>
+              </ul>
+
+              <!-- <button class="explore-btn" onclick="openGallery('designs')">
+                Explore Our Past Projects and Design
+                <i class="bi bi-arrow-right"></i>
+              </button> -->
+            </div>
+          </div>
+      </section>
+
+
+
+      <section class="branch-section fade-in" id="interiors">
+        <div class="branch-content">
+          <div class="branch-image">
+            <img src="pictures/pain1.jpg" alt="Iconic Interiors" />
+          </div>
+          <div class="branch-text">
+            <h2>Iconic Interiors & Painting</h2>
+            <p>
+              We focus on interior and exterior decoration, providing styling,
+              professional painting, and décor consultation for residential and
+              commercial spaces. Transforming spaces into visually captivating
+              and functionally enhanced environments. We enhance the aesthetics
+              and functionality of living and working spaces through quality
+              painting, decoration, and design consultation.
+            </p>
+            <p>
+              Iconic Interior and Exterior Design blends creativity with
+              craftsmanship to transform spaces into personalized works of art.
+              We offer design-forward and detail-oriented services that enhance
+              aesthetics and functionality, including:
+            </p>
+
+            <h3>Our Expertise:</h3>
+            <ul class="expertise-list">
+              <li>
+                <strong>Interior Decoration:</strong>
+                Space planning, color coordination, décor styling, furniture
+                layout, and finishing touches tailored to individual tastes.
+              </li>
+              <li>
+                <strong>Exterior and Interior Painting:</strong>
+                Professional painting services using high-quality materials and
+                techniques to ensure smooth finishes, color durability, and
+                modern appeal.
+              </li>
+              <li>
+                <strong>Residential & Commercial Styling:</strong>
+                Décor services that reflect lifestyle, brand identity, or
+                purpose, whether for homes, offices, or retail spaces.
+              </li>
+              <li>
+                <strong>Additional Services:</strong>
+                Décor Consultation for Residential and Commercial Spaces,
+                Wallpaper Installation, Screeding, Tyrolean etc.
+              </li>
+            </ul>
+
+            <button class="explore-btn" onclick="openGallery('interiors')">
+              Explore Our Past Projects
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="designsModal" class="gallery-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Design Projects Gallery</h2>
+          <button class="close-modal" onclick="closeGallery('designs')">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/Plastic Hand Fan (custom) 🪭  Thank you….jpeg"
+                alt="Design Project 1"
+              />
+              <div class="gallery-item-overlay">
+                <p>Brand Identity Design</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/Hire Dedicated UI Developers for your next… (1).jpeg"
+                alt="Design Project 2"
+              />
+              <div class="gallery-item-overlay">
+                <p>UI/UX Design</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/Sleek mini jotters for one of our amazing clients….jpeg"
+                alt="Design Project 3"
+              />
+              <div class="gallery-item-overlay">
+                <p>Motion Graphics</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/b8ec9ebe-b870-493e-831a-6874a630b817.jpeg"
+                alt="Design Project 4"
+              />
+              <div class="gallery-item-overlay">
+                <p>Custom Graphics</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/__🚀 Professional Website Design & Development….jpeg"
+                alt="Design Project 5"
+              />
+              <div class="gallery-item-overlay">
+                <p>Social Media Visuals</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-design/Elevate Your Website with Top UI_UX Design Recommendations from MyDesigns.jpeg"
+                alt="Design Project 6"
+              />
+              <div class="gallery-item-overlay">
+                <p>Marketing Collateral</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="interiorsModal" class="gallery-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Interior Projects Gallery</h2>
+          <button class="close-modal" onclick="closeGallery('interiors')">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/0a3d3c76-5d94-4688-b882-25caefeeba9c.jpeg"
+                alt="Interior Project 1"
+              />
+              <div class="gallery-item-overlay">
+                <p>Residential Interior</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/1e5fc97f-b56a-493d-80b0-b24c4978fe28.jpeg"
+                alt="Interior Project 2"
+              />
+              <div class="gallery-item-overlay">
+                <p>Commercial Space</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/f0ed6331-c122-413d-83ce-fff8be65d6a8.jpeg"
+                alt="Interior Project 3"
+              />
+              <div class="gallery-item-overlay">
+                <p>Exterior Painting</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/f110b73a-d735-4bf9-9970-2fa69c94e250.jpeg"
+                alt="Interior Project 4"
+              />
+              <div class="gallery-item-overlay">
+                <p>Office Styling</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/Un peintre à Yaoundé Mendong au Cameroun.jpeg"
+                alt="Interior Project 5"
+              />
+              <div class="gallery-item-overlay">
+                <p>Home Decoration</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="pictures/branch-technologies/Upgrade Your Designer False Ceiling in Just 7….jpeg"
+                alt="Interior Project 6"
+              />
+              <div class="gallery-item-overlay">
+                <p>Wallpaper Installation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullscreen-viewer" id="fullscreenViewer">
+      <button class="viewer-close" onclick="closeFullscreenViewer()">&times;</button>
+      <button class="viewer-nav viewer-prev" onclick="navigateImage(-1)">&#10094;</button>
+      <button class="viewer-nav viewer-next" onclick="navigateImage(1)">&#10095;</button>
+      <div class="fullscreen-image-container">
+        <img class="fullscreen-image" id="fullscreenImage" src="" alt="">
+        <div class="image-counter" id="imageCounter"></div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- Footer Section -->
+    <footer class="footerSection">
+      <div class="container">
+        <h2>SIGN UP FOR EMAIL UPDATES</h2>
+        <form class="subscribe-form" method="POST" action="emails/subscribe.php">
+            <div class="email-subscribe">
+              <input type="text" placeholder="Your Name" name="name" id="name" required>
+              <input type="email" placeholder="Your Email" name="email" id="email" required>
+              <input type="submit" name='submit' value="SUBSCRIBE" id="subscribe">
+            </div>
+        </form>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="contact" id="contact">
+        <div class="contact-iconic">
+          <div class="d-flex justify-content-start align-items-center img-div">
+            <img src="pictures/logo-crimson-red.png" width="30px" alt="">
+            <h3 class="mx-lg-2 mx-1 fw-bold">Iconic Innovations</h3>
+          </div>
+          <p>
+            Iconic Innovations Nigeria Limited is a multi-disciplinary company committed to 
+            redefining industries through innovation, and creative expression, shaping the 
+            future of Africa and beyond.
+          </p>
+          <div class="social-icons my-lg-5 my-2">
+            <a href="https://www.facebook.com/iconicinnovate" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/iconicinnovate/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/iconicinnovate/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/iconicinnovate" target="_blank" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://wa.me/2348106156968" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <h4 class="centered-title">
+            Contact Info
+          </h4>
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+234 81 0615 6968 | +234 81 5592 2125</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>contact@iconicinnovations.com.ng</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>10, Adepoju Street, Alapere Ketu, Lagos</span>
+          </div>
+        </div>
+        <div class="contact-quick">
+          <h4 class="centered-title">Quick Links</h4>
+          <ul class="quick-links-list">
+            <li><a href="index.html"><span class="list-bullet" style="color:#df1f26">></span>Home</a></li>
+            <li><a href="about.html"><span class="list-bullet" style="color:#df1f26">></span> About Us</a></li>
+            <li><a href="branches.html"><span class="list-bullet" style="color:#df1f26">></span> Our Branches</a></li>
+            <li><a href="goals.html"><span class="list-bullet" style="color:#df1f26">></span> Our Goals & SDG</a></li>
+            <li><a href="contact.html"><span class="list-bullet" style="color:#df1f26">></span> Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer footer-link">
+    <p>&copy;2025 Iconic Innovations Nigeria Limited. All rights reserved <br> 
+      <!-- <a href="privacy-policy.html"> Privacy Policy</a> | </a> --><a href="terms.html"> Terms & Conditions </a>
+    </p>
+  </div>
+
+  <a href="https://wa.me/2348106156968?text=Hi%20Iconic%20Innovations,%20I%20found%20your%20website%20and%20I%E2%80%99m%20interested%20in%20your%20services.%20Can%20you%20tell%20me%20more%3F" 
+      target="_blank" 
+      class="whatsapp-chat-btn"
+      id="whatsapp-chat-btn">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="js/branches.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-israel.js"></script>
+  </body>
+</html>
